@@ -21,8 +21,10 @@
         </button>
 
         <nav class="navlinks" id="navigation" aria-label="Main navigation">
-          <a href="#expertise">Expertise</a>
           <a href="#background">Background</a>
+          <a href="#expertise">Expertise</a>
+          <a href="#toolkit">Toolkit</a>
+          <a href="#work">Work</a>
           <a href="#credentials">Credentials</a>
           <a class="navcontact" href="#contact">Let’s connect ↗</a>
         </nav>
@@ -66,10 +68,6 @@
               </div>
             </div>
 
-            <div class="cardbottom">
-              <span>TESDA NC II Certified · CSS</span>
-              <a class="arrowcircle" href="#background" aria-label="Explore my background">↘</a>
-            </div>
           </div>
         </section>
 
@@ -84,10 +82,46 @@
           <b>Social Media</b>
         </div>
 
+        <section class="section" id="background" data-animate>
+          <div class="sectionhead">
+            <div>
+              <div class="eyebrow">01 / Background</div>
+              <h2>Built on learning.<br />Applied through experience.</h2>
+            </div>
+          </div>
+
+          <div class="career row g-5">
+            <div class="col-12 col-lg-6">
+              <p class="columnlabel">Professional experience</p>
+              <article class="entry">
+                <div class="date">JUNE 2026 — PRESENT <span class="current">CURRENT</span></div>
+                <h3>Social Media Manager</h3>
+                <div class="org">Tubero Experts</div>
+                <p>Bringing a background in social media management, AI-assisted content creation, video editing, and digital branding to a current professional role.</p>
+              </article>
+            </div>
+
+            <div class="col-12 col-lg-6">
+              <p class="columnlabel">Education</p>
+              <article class="entry">
+                <div class="date">AUGUST 2023 — SEPTEMBER 2026</div>
+                <h3>BS Information Technology</h3>
+                <div class="org">Access Computer and Technical Colleges</div>
+              </article>
+
+              <article class="entry">
+                <div class="date">AUGUST 2021 — SEPTEMBER 2023</div>
+                <h3>Information Communication Technology</h3>
+                <div class="org">Access Computer and Technical Colleges</div>
+              </article>
+            </div>
+          </div>
+        </section>
+
         <section class="section" id="expertise" data-animate>
           <div class="sectionhead">
             <div>
-              <div class="eyebrow">01 / Expertise</div>
+              <div class="eyebrow">02 / Expertise</div>
               <h2>Three disciplines.<br />One practical approach.</h2>
             </div>
             <p>Hands-on technical skills paired with a creative mindset, a willingness to learn, and a focus on solving problems.</p>
@@ -132,9 +166,9 @@
           </div>
         </section>
 
-        <section class="section toolbox row g-5" aria-labelledby="tools-title" data-animate>
+        <section class="section toolbox row g-5" id="toolkit" aria-labelledby="tools-title" data-animate>
           <div class="col-12 col-lg-4">
-            <div class="eyebrow">02 / Toolkit</div>
+            <div class="eyebrow">03 / Toolkit</div>
             <h2 id="tools-title">The tools behind<br />the work.</h2>
             <p>A blend of technical foundations and creative tools. Explore each area.</p>
           </div>
@@ -142,10 +176,11 @@
           <div class="col-12 col-lg-8">
             <div id="skills-app">
               <div class="tabs" role="tablist" aria-label="Skill categories">
-                <button class="tab" id="tab-automation" type="button" role="tab" aria-selected="true" aria-controls="skill-panel" data-skill="automation">Automation</button>
+                <button class="tab" id="tab-servicing" type="button" role="tab" aria-selected="false" aria-controls="skill-panel" tabindex="-1" data-skill="servicing">Computer Servicing</button>
+                <button class="tab" id="tab-automation" type="button" role="tab" aria-selected="true" aria-controls="skill-panel" data-skill="automation">n8n Automation</button>
+                <button class="tab" id="tab-creative" type="button" role="tab" aria-selected="false" aria-controls="skill-panel" tabindex="-1" data-skill="creative">AI &amp; UGC Content</button>
+                <button class="tab" id="tab-social" type="button" role="tab" aria-selected="false" aria-controls="skill-panel" tabindex="-1" data-skill="social">Social Media</button>
                 <button class="tab" id="tab-development" type="button" role="tab" aria-selected="false" aria-controls="skill-panel" tabindex="-1" data-skill="development">Development</button>
-                <button class="tab" id="tab-creative" type="button" role="tab" aria-selected="false" aria-controls="skill-panel" tabindex="-1" data-skill="creative">Creative</button>
-                <button class="tab" id="tab-workplace" type="button" role="tab" aria-selected="false" aria-controls="skill-panel" tabindex="-1" data-skill="workplace">Workplace</button>
               </div>
 
                 <div class="skillpanel" id="skill-panel" role="tabpanel" aria-labelledby="tab-automation" tabindex="0">
@@ -162,46 +197,72 @@
           </div>
         </section>
 
-        <section class="section" id="background" data-animate>
+        <section class="section" id="work" data-animate>
           <div class="sectionhead">
             <div>
-              <div class="eyebrow">03 / Background</div>
-              <h2>Built on learning.<br />Applied through experience.</h2>
+              <div class="eyebrow">04 / Work showcase</div>
+              <h2>Ideas into useful work.</h2>
             </div>
+            <p>A visual preview of the work I can support. Published links, project images, and video samples can be added as they’re ready.</p>
           </div>
 
-          <div class="career row g-5">
-            <div class="col-12 col-lg-6">
-              <p class="columnlabel">Professional experience</p>
-              <article class="entry">
-                <div class="date">JUNE 2026 — PRESENT <span class="current">CURRENT</span></div>
-                <h3>Social Media Manager</h3>
-                <div class="org">Tubero Experts</div>
-                <p>Bringing a background in social media management, AI-assisted content creation, video editing, and digital branding to a current professional role.</p>
-              </article>
-            </div>
+          <div class="work-grid">
+            <article class="work-card">
+              <div class="work-preview workflow-preview" aria-hidden="true">
+                <span class="preview-label">CONCEPT PREVIEW</span>
+                <div class="workflow">
+                  <span class="workflow-node">Trigger</span>
+                  <span class="workflow-line"></span>
+                  <span class="workflow-node">Process</span>
+                  <span class="workflow-line"></span>
+                  <span class="workflow-node">Result</span>
+                </div>
+                <span class="preview-caption">n8n · workflow automation</span>
+              </div>
+              <div class="work-copy">
+                <span class="work-type">AUTOMATION</span>
+                <h3>Connected workflows</h3>
+                <p>Task automation with n8n, APIs, and webhooks.</p>
+                <a class="work-link" href="#contact">Discuss an automation project <span aria-hidden="true">↗</span></a>
+              </div>
+            </article>
 
-            <div class="col-12 col-lg-6">
-              <p class="columnlabel">Education</p>
-              <article class="entry">
-                <div class="date">AUGUST 2023 — SEPTEMBER 2026</div>
-                <h3>BS Information Technology</h3>
-                <div class="org">Access Computer and Technical Colleges</div>
-              </article>
+            <article class="work-card">
+              <div class="work-preview video-preview" aria-hidden="true">
+                <span class="preview-label">VIDEO CONCEPT</span>
+                <span class="play-icon">▶</span>
+                <span class="preview-caption">AI video · UGC content</span>
+              </div>
+              <div class="work-copy">
+                <span class="work-type">AI &amp; UGC CONTENT</span>
+                <h3>Short-form storytelling</h3>
+                <p>AI-assisted video concepts, editing, and UGC-style content.</p>
+                <a class="work-link" href="#contact">Discuss a content project <span aria-hidden="true">↗</span></a>
+              </div>
+            </article>
 
-              <article class="entry">
-                <div class="date">AUGUST 2021 — SEPTEMBER 2023</div>
-                <h3>Information Communication Technology</h3>
-                <div class="org">Access Computer and Technical Colleges</div>
-              </article>
-            </div>
+            <article class="work-card">
+              <div class="work-preview social-preview" aria-hidden="true">
+                <span class="preview-label">LAYOUT CONCEPT</span>
+                <div class="social-layout">
+                  <span></span><span></span><span></span>
+                </div>
+                <span class="preview-caption">Social media · visual planning</span>
+              </div>
+              <div class="work-copy">
+                <span class="work-type">SOCIAL MEDIA</span>
+                <h3>Content with a clear voice</h3>
+                <p>Social media management and visual content planning.</p>
+                <a class="work-link" href="#contact">Discuss a social project <span aria-hidden="true">↗</span></a>
+              </div>
+            </article>
           </div>
         </section>
 
         <section class="section" id="credentials" data-animate>
           <div class="sectionhead">
             <div>
-              <div class="eyebrow">04 / Credentials</div>
+              <div class="eyebrow">05 / Credentials</div>
               <h2>Technical foundations.<br />People-first leadership.</h2>
             </div>
             <p>Certifications and recognition reflecting technical training, teamwork, and service to the school community.</p>
@@ -211,8 +272,8 @@
             <article class="award col-12 col-lg-6">
               <span class="awardmark" aria-hidden="true">✧</span>
               <div>
-                <h3>TESDA NC II — Computer System Servicing</h3>
-                <p>Certified in Computer System Servicing. CSS certificate awarded January 13, 2023.</p>
+                <h3>A collaborative working style</h3>
+                <p>Adaptability, communication, teamwork, problem-solving, time management, and a willingness to learn.</p>
               </div>
             </article>
 
@@ -235,8 +296,8 @@
             <article class="award col-12 col-lg-6">
               <span class="awardmark" aria-hidden="true">✧</span>
               <div>
-                <h3>A collaborative working style</h3>
-                <p>Adaptability, communication, teamwork, problem-solving, time management, and a willingness to learn.</p>
+                <h3>TESDA NC II — Computer System Servicing</h3>
+                <p>Certified in Computer System Servicing. CSS certificate awarded January 13, 2023.</p>
               </div>
             </article>
           </div>
@@ -245,7 +306,7 @@
         <section class="contact" id="contact" data-animate>
           <div class="contactbox row g-5">
             <div class="col-12 col-lg-6">
-              <div class="eyebrow">05 / Let’s connect</div>
+              <div class="eyebrow">06 / Let’s connect</div>
               <h2>Have something<br />in mind? Let’s talk.</h2>
               <p>For opportunities in IT support, automation, AI content, or social media management, get in touch.</p>
             </div>

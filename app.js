@@ -1,23 +1,33 @@
 const skills = {
+  servicing: {
+    label: 'Computer Servicing',
+    title: 'Reliable technical foundations.',
+    body: 'Computer System Servicing skills including hardware setup, system maintenance, Windows installation, peripheral setup, and basic troubleshooting.',
+    tags: ['TESDA NC II', 'Computer Hardware', 'Windows', 'Troubleshooting']
+  },
   automation: {
+    label: 'n8n Automation',
     title: 'Connect tools. Simplify tasks.',
     body: 'Workflow creation and task automation with n8n, including API integrations, webhooks, and basic LLM prompting and integration.',
     tags: ['n8n', 'API Integration', 'Webhooks', 'AI Prompting']
   },
-  development: {
-    title: 'A foundation in code.',
-    body: 'Training and practical experience with HTML, CSS, and Python, supported by an Information Technology education.',
-    tags: ['HTML', 'CSS', 'Python']
-  },
   creative: {
+    label: 'AI & UGC Content',
     title: 'Ideas made visual.',
     body: 'AI video and UGC content creation, video editing, prompt engineering, and AI-assisted branding, with graphic design tools for visual content.',
     tags: ['AI Video', 'UGC Content', 'Photoshop', 'Canva', 'Video Editing']
   },
-  workplace: {
-    title: 'Organized, adaptable, collaborative.',
-    body: 'Everyday productivity with Microsoft Office, paired with communication, teamwork, problem-solving, and time management.',
-    tags: ['Word', 'Excel', 'PowerPoint', 'Communication', 'Problem-Solving']
+  social: {
+    label: 'Social Media',
+    title: 'Content made for people.',
+    body: 'Social media management, content planning, visual storytelling, and AI-assisted branding for clear, consistent communication.',
+    tags: ['Social Media', 'Content Planning', 'Branding', 'Communication']
+  },
+  development: {
+    label: 'Development',
+    title: 'A foundation in code.',
+    body: 'Training and practical experience with HTML, CSS, and Python, supported by an Information Technology education.',
+    tags: ['HTML', 'CSS', 'Python']
   }
 };
 
@@ -87,7 +97,7 @@ function SkillTabs() {
           onClick: () => setSelectedSkill(category),
           onKeyDown: handleKeyDown
         },
-        category.charAt(0).toUpperCase() + category.slice(1)
+        skills[category].label
       ))
     ),
     createElement(

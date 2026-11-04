@@ -467,7 +467,7 @@ h1 em {
 
 .work-grid {
   display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 20px;
 }
 
@@ -577,6 +577,44 @@ h1 em {
 
 .social-layout span:nth-child(3) {
   background: linear-gradient(160deg, #d6bd94 0 34%, #74856a 34% 72%, #f7f4ec 72%);
+}
+
+.kitchen-preview {
+  color: #f7f4ec;
+  background:
+    radial-gradient(ellipse at 75% 30%, #b97c4e 0 12%, transparent 12.5%),
+    linear-gradient(135deg, #3e5548, #1d302b);
+}
+
+.kitchen-preview .preview-label,
+.kitchen-preview .preview-caption {
+  color: #eee3d2;
+}
+
+.kitchen-brand {
+  display: grid;
+  justify-items: center;
+  gap: 5px;
+  font-family: Georgia, serif;
+  font-size: 19px;
+  text-align: center;
+}
+
+.kitchen-mark {
+  display: grid;
+  width: 38px;
+  height: 38px;
+  place-items: center;
+  border: 1px solid #d5b68f;
+  border-radius: 50%;
+  color: #e6c79c;
+  font-size: 17px;
+}
+
+.kitchen-brand small {
+  color: #d3ddce;
+  font-family: inherit;
+  font-size: 10px;
 }
 
 .work-copy {

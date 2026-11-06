@@ -5,12 +5,6 @@ const skills = {
     body: 'Computer System Servicing skills including hardware setup, system maintenance, Windows installation, peripheral setup, and basic troubleshooting.',
     tags: ['TESDA NC II', 'Computer Hardware', 'Windows', 'Troubleshooting']
   },
-  automation: {
-    label: 'n8n Automation',
-    title: 'Connect tools. Simplify tasks.',
-    body: 'Workflow creation and task automation with n8n, including API integrations, webhooks, and basic LLM prompting and integration.',
-    tags: ['n8n', 'API Integration', 'Webhooks', 'AI Prompting']
-  },
   creative: {
     label: 'AI & UGC Content',
     title: 'Ideas made visual.',
@@ -50,7 +44,7 @@ if (menuButton && navigation) {
 }
 
 function SkillTabs() {
-  const [selectedSkill, setSelectedSkill] = React.useState('automation');
+  const [selectedSkill, setSelectedSkill] = React.useState('creative');
   const categories = Object.keys(skills);
   const currentIndex = categories.indexOf(selectedSkill);
   const skill = skills[selectedSkill];
